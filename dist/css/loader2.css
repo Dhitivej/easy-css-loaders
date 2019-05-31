@@ -1,0 +1,21 @@
+.loader {
+	font-family: 'ZCOOL KuaiLe', cursive;
+	font-size: 40px;
+	color: palevioletred;
+}
+
+.loader::after {
+	/* ASCII Code for three dots */
+	content: '\2026';
+	width: 0px;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: bottom;
+	animation: dots steps(4, end) 2s infinite;
+}
+
+@keyframes dots {
+	to {
+		width: 1.25em;
+	}
+}
